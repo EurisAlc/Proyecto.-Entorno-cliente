@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Formulario</h1>
+    </div>
+    <form>
+
+        <!-- Datos del alumno. -->
+        <div>
+            <fieldset>
+                <legend><b>Datos personales</b></legend><br>
+                <label><b>Nombre: </b></label>
+                <input type="text" id="nombre" size="20"><br><br>
+                <label><b>Apellidos: </b></label>
+                <input type="text" id="apellidos" size="20"><br><br>
+                <label><b>Sexo: </b></label>
+                <input type="radio" name="genero" value="M">Masculino
+                <input type="radio" name="genero" value="F">Femenino
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Calificaciones del alumno. -->
+        <div>
+            <fieldset>
+                <legend><b>Calificaciones</b></legend><br>
+                <label><b>Primer trimestre: </b></label>
+                <input type="text" id="nota1"><br><br>
+                <label><b>Segundo trimestre: </b></label>
+                <input type="text" id="nota2"><br><br>
+                <label><b>Tercer trimestre: </b></label>
+                <input type="text" id="nota3"><br><br>
+                <label><b>Curso: </b>
+
+                    <!-- Seleción del curso. -->
+                    <select id="opciones">
+                        <option value="0">Sin asignar</option>
+                        <option value="1">Primero</option>
+                        <option value="2">Segundo</option>
+                        <option value="3">Tercero</option>
+                    </select>
+                </label>
+            </fieldset>
+        </div>
+        <br>
+
+        <!-- Botón. Añade el registro del alumno. -->
+        <div>
+            <button id="añadir" type="button" onclick="agregarDatos()">Añadir</button>
+        </div>
+    </form>
+    <br>
+
+    <!-- Tabla. -->
+    <h2>Registro de los alumnos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Sexo</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Nota final</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="lista">
+            <!-- Registro de los alumnos añadido. -->
+        </tbody>
+    </table>
+</body>
+
+</html>

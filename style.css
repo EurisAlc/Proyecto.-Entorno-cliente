@@ -1,0 +1,47 @@
+ /**{
+    font-family: Helvetica, Verdana;
+}
+*/
+legend{
+    font-size: 18px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: dodgerblue
+}
+
+th,td {
+    padding: 10px 20px;
+    border: 1px solid powderblue;
+}
+
+tbody {
+    background-color: white;
+}
+
+#lista {
+    text-align: center;
+}
+
+#añadir {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: green;
+    color: white;
+    border-radius: 7px 7px 7px 7px;
+    width: 60px;
+    height: 25px;
+}
+
+#eliminar {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: crimson;
+    color: white;
+    border-radius: 7px 7px 7px 7px;
+    width: 80px;
+    height: 25px;
+}
